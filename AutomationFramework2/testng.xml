@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Testng Suite">
+
+    <parameter name="suitename" value="Regression"/>
+    <parameter name="reportTitle" value="Automation Report"></parameter>
+    <parameter name="executionEnv" value="Local"></parameter>
+    <parameter name="OS" value="Windows 11"></parameter>
+    <parameter name="browserName" value="Chrome"></parameter>
+    <parameter name="userName" value="Avishek Debnath"></parameter>
+    <parameter name="TestCategory" value="Regression"></parameter>
+     <test name="Test POC2" parallel ="classes" thread-count="5">
+     <groups>
+		<run>
+			<include name="regression"></include>
+		</run>
+	 </groups>
+        <classes>
+			<class name="com.automation.test.TC_Login"></class>
+		</classes>
+     </test>
+</suite>

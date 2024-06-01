@@ -1,0 +1,2 @@
+Directory has been created successfully
+File :: Regression_Chrome.zip has been deleted. 
